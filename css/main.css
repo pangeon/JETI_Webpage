@@ -1,0 +1,62 @@
+/* index.html */
+.flex-container {
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+}
+.flex-container > div {
+    background-color: lightcoral;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+.first-flex-container-lvl2 {
+    background-color: lightseagreen;
+    margin: 15px;
+    padding: 10px;
+    font-size: 20px;
+}
+.second-flex-container-lvl2 {
+    background-color: mediumaquamarine;
+    margin: 20px;
+    padding: 30px;
+    font-size: 10px;
+}
+.third-flex-container-lvl2 {
+    background-color: mediumvioletred;
+    margin: 10px;
+    padding: 30px;
+    font-size: 15px;
+}
+/* inicjatywy.html */
+.flex-container-list {
+    display: flex;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+}
+div.logo-item {
+    margin: 15px;
+    padding: 25px;
+    background-color: whitesmoke;
+}
+.logo-item > a, img {
+    max-width: 100%;
+}
+.logo-item > a:hover {
+    opacity: 0.5;
+    transition-duration: 1s;
+}
+/* zespol.html */
+.flex-container-wrap {
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.flex-container-wrap > div {
+    width: 100px;
+    margin: 10px;
+}
+.flex-container-wrap > div > p {
+    text-align: center;
+}

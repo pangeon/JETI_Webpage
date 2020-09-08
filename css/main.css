@@ -1,38 +1,44 @@
-/* index.html */
 .flex-container {
     display: flex;
     background-color: whitesmoke;
     justify-content: center;
 }
-.flex-container > div {
-    background-color: lightcoral;
+.flex-container-col {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+.flex-container-col > div {
+    width: 300px;
     margin: 10px;
-    padding: 20px;
-    font-size: 30px;
 }
-.first-flex-container-lvl2 {
-    background-color: lightseagreen;
-    margin: 15px;
-    padding: 10px;
-    font-size: 20px;
-}
-.second-flex-container-lvl2 {
-    background-color: mediumaquamarine;
-    margin: 20px;
-    padding: 30px;
-    font-size: 10px;
-}
-.third-flex-container-lvl2 {
-    background-color: mediumvioletred;
-    margin: 10px;
-    padding: 30px;
-    font-size: 15px;
-}
-/* inicjatywy.html */
 .flex-container-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: whitesmoke;
     margin-bottom: 10px;
+}
+.flex-container-list > ul, li {
+    display: flex;
+    margin: 0px;
+}
+.flex-container-list > ul > li {
+    padding: 10px;
+}
+.flex-container-list > ul > li:hover {
+    background-color: #b36619;
+    transition-duration: 1s;
+}
+.flex-container-list > ul > li > a {
+    text-decoration: none;
+    color: #078ab3;
+}
+.flex-container-list > ul > li > a:hover {
+    color: #3dd1ff;
 }
 div.logo-item {
     margin: 15px;
@@ -46,7 +52,6 @@ div.logo-item {
     opacity: 0.5;
     transition-duration: 1s;
 }
-/* zespol.html */
 .flex-container-wrap {
     display: flex;
     background-color: whitesmoke;

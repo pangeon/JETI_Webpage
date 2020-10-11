@@ -1,67 +1,43 @@
 .flex-container {
-    display: flex;
-    background-color: whitesmoke;
-    justify-content: center;
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: center;
 }
 .flex-container-col {
-    display: flex;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: whitesmoke;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
 }
 .flex-container-col > div {
-    width: 300px;
-    margin: 10px;
-}
-.flex-container-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: whitesmoke;
-    margin-bottom: 10px;
-}
-.flex-container-list > ul, li {
-    display: flex;
-    margin: 0px;
-}
-.flex-container-list > ul > li {
-    padding: 10px;
-}
-.flex-container-list > ul > li:hover {
-    background-color: #b36619;
-    transition-duration: 1s;
-}
-.flex-container-list > ul > li > a {
-    text-decoration: none;
-    color: #078ab3;
-}
-.flex-container-list > ul > li > a:hover {
-    color: #3dd1ff;
+  width: 300px;
+  margin: 10px;
 }
 div.logo-item {
-    margin: 15px;
-    padding: 25px;
-    background-color: whitesmoke;
+  margin: 15px;
+  padding: 25px;
+  background-color: whitesmoke;
 }
-.logo-item > a, img {
-    max-width: 100%;
+.logo-item > a,
+img {
+  max-width: 100%;
 }
 .logo-item > a:hover {
-    opacity: 0.5;
-    transition-duration: 1s;
+  opacity: 0.5;
+  transition-duration: 1s;
 }
 .flex-container-wrap {
-    display: flex;
-    background-color: whitesmoke;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .flex-container-wrap > div {
-    width: 100px;
-    margin: 10px;
+  width: 100px;
+  margin: 10px;
 }
 .flex-container-wrap > div > p {
-    text-align: center;
+  text-align: center;
 }

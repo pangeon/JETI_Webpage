@@ -1,0 +1,22 @@
+@mixin colspan($start: 1, $end: 5) {
+  grid-column-start: $start;
+  grid-column-end: $end;
+}
+.colgroup-full {
+  @include colspan;
+}
+.colspan-75-left {
+  @include colspan(1, 4);
+}
+.colspan-75-right {
+  @include colspan(5, 2);
+}
+.colspan-50-left {
+  @include colspan(1, 3);
+}
+.colspan-50-right {
+  @include colspan(3, 5);
+}
+.colspan-50-center {
+  @include colspan(2, 4);
+}

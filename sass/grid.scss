@@ -1,9 +1,35 @@
 @mixin colspan($start: 1, $end: 5) {
-  grid-column-start: $start;
-  grid-column-end: $end;
+  grid-column: #{$start} / #{$end};
 }
-.colgroup-full {
-  @include colspan;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 400px 300px 500px 300px 300px 300px;
+  grid-gap: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 10%;
+}
+.grid-item {
+  border: 1px solid lightgrey;
+}
+img {
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  width: 100%;
+}
+.img-500 {
+  height: 500px;
+}
+.img-400 {
+  height: 400px;
+}
+.img-300 {
+  height: 300px;
+}
+.colspan-full {
+  @include colspan(1, 5);
 }
 .colspan-75-left {
   @include colspan(1, 4);

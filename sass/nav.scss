@@ -1,0 +1,30 @@
+$coverColor: whitesmoke;
+$hoverMenuColor: #b36619;
+$linkColor: #078ab3;
+$hoverLinkColor: #3dd1ff;
+
+.flex-container-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $coverColor;
+  margin-bottom: 10px;
+  ul {
+    display: flex;
+    margin: 0px;
+  }
+  ul li {
+    padding: 10px;
+  }
+  ul li:hover {
+    background-color: $hoverMenuColor;
+    transition-duration: 1s;
+  }
+  ul li a {
+    text-decoration: none;
+    color: $linkColor;
+  }
+  ul li a:hover {
+    color: $hoverLinkColor;
+  }
+}

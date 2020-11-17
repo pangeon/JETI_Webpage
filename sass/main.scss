@@ -1,4 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 $coverColor: whitesmoke;
+$borderColor: lightgrey;
+$shadowcolor: darkgrey;
+$buttonCardColorBackgroud: #078ab3;
+$buttonCardColorFont: white;
+$cardsColor: white;
+$H3CardFontSize: 18px;
+$paragraphCardFontSize: 14px;
+$cardSize: 300px;
+$paragraphCardHeight: 80px;
+$buttonHoverCardColor: #b36619;
+$strongFont: "Roboto Condensed", sans-serif;
+$lightFont: "Montserrat", sans-serif;
 
 .flex-container {
   display: flex;
@@ -54,6 +69,55 @@ img {
   div {
     p {
       text-align: center;
+      font-family: $strongFont;
+      font-size: 14px;
+    }
+  }
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  background: $coverColor;
+  .card {
+    flex: 0 0 $cardSize;
+    margin: 10px;
+    border: 2px solid $borderColor;
+    box-shadow: 3px 2px 6px 0px $shadowcolor;
+    background: $cardsColor;
+    .text {
+      padding: 0 25px 25px;
+      text-align: justify;
+      font-size: $paragraphCardFontSize;
+      p {
+        height: $paragraphCardHeight;
+        font-family: $lightFont;
+      }
+      h3 {
+        font-weight: bolder;
+        text-align: center;
+        font-family: $strongFont;
+        padding: 25px 0;
+        font-size: $H3CardFontSize;
+      }
+      > button {
+        background: $buttonCardColorBackgroud;
+        font-family: $strongFont;
+        border: 0;
+        color: $buttonCardColorFont;
+        padding: 12px;
+        margin: 12px 0 0 0;
+        width: 100%;
+
+        &:hover {
+          background: $buttonHoverCardColor;
+        }
+      }
+    }
+    img {
+      margin: 2% 10% 0 10%;
+      width: 80%;
     }
   }
 }

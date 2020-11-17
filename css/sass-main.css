@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .flex-container {
   display: flex;
   background-color: whitesmoke;
@@ -41,6 +43,47 @@ img {
   margin: 10px; }
 
 .flex-container-wrap div p {
-  text-align: center; }
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px; }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  background: whitesmoke; }
+  .cards .card {
+    flex: 0 0 300px;
+    margin: 10px;
+    border: 2px solid lightgrey;
+    box-shadow: 3px 2px 6px 0px darkgrey;
+    background: white; }
+    .cards .card .text {
+      padding: 0 25px 25px;
+      text-align: justify;
+      font-size: 14px; }
+      .cards .card .text p {
+        height: 80px;
+        font-family: "Montserrat", sans-serif; }
+      .cards .card .text h3 {
+        font-weight: bolder;
+        text-align: center;
+        font-family: "Roboto Condensed", sans-serif;
+        padding: 25px 0;
+        font-size: 18px; }
+      .cards .card .text > button {
+        background: #078ab3;
+        font-family: "Roboto Condensed", sans-serif;
+        border: 0;
+        color: white;
+        padding: 12px;
+        margin: 12px 0 0 0;
+        width: 100%; }
+        .cards .card .text > button:hover {
+          background: #b36619; }
+    .cards .card img {
+      margin: 2% 10% 0 10%;
+      width: 80%; }
 
 /*# sourceMappingURL=sass-main.css.map */

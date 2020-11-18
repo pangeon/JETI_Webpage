@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+$coverColor: whitesmoke;
+$strongFont: "Roboto Condensed", sans-serif;
+$lightFont: "Montserrat", sans-serif;
+$buttonCardColorBackgroud: #078ab3;
+$buttonHoverCardColor: #b36619;
+$sectionColor: lightgrey;
+$smallFontSize: 14px;
+$bigFontSize: 18px;
+$hederSize: 30px;
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: $coverColor;
+  font-family: $lightFont;
+  border-radius: 3px;
+  padding: 1em;
+  h1 {
+    color: $buttonCardColorBackgroud;
+    text-align: center;
+    font-size: $hederSize;
+    font-family: $strongFont;
+  }
+  .row-form {
+    display: flex;
+    justify-content: center;
+    .column-form {
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+      .input-form-group {
+        display: flex;
+        > label {
+          font-size: $smallFontSize;
+          margin-right: 1em;
+          padding: 0 0;
+        }
+        span {
+          color: red;
+        }
+      }
+    }
+  }
+  input,
+  select,
+  textarea {
+    border: 1px solid $sectionColor;
+    font-family: $lightFont;
+    font-size: $smallFontSize;
+    padding: 0.6em;
+    margin-bottom: 2em;
+    flex: 2;
+  }
+  textarea {
+    height: 100px;
+  }
+  button {
+    padding: 1em;
+    background: $buttonCardColorBackgroud;
+    font-family: $strongFont;
+    font-size: $bigFontSize;
+    width: 30%;
+    color: white;
+    border: 0px;
+    &:hover {
+      background-color: $buttonHoverCardColor;
+    }
+  }
+  fieldset {
+    border: 1px solid $sectionColor;
+    background: white;
+    legend {
+      text-align: center;
+      margin-bottom: 0.5em;
+      font-family: $strongFont;
+      color: $buttonHoverCardColor;
+    }
+  }
+  .support > label,
+  .disabilities > label {
+    display: block;
+    font-size: $smallFontSize;
+  }
+  .support,
+  .disabilities {
+    padding: 10px;
+  }
+}

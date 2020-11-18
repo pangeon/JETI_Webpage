@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 3px;
+  padding: 1em; }
+  .contact-form h1 {
+    color: #078ab3;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Roboto Condensed", sans-serif; }
+  .contact-form .row-form {
+    display: flex;
+    justify-content: center; }
+    .contact-form .row-form .column-form {
+      display: flex;
+      flex-direction: column;
+      padding: 1em; }
+      .contact-form .row-form .column-form .input-form-group {
+        display: flex; }
+        .contact-form .row-form .column-form .input-form-group > label {
+          font-size: 14px;
+          margin-right: 1em;
+          padding: 0 0; }
+        .contact-form .row-form .column-form .input-form-group span {
+          color: red; }
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    border: 1px solid lightgrey;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    padding: 0.6em;
+    margin-bottom: 2em;
+    flex: 2; }
+  .contact-form textarea {
+    height: 100px; }
+  .contact-form button {
+    padding: 1em;
+    background: #078ab3;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    width: 30%;
+    color: white;
+    border: 0px; }
+    .contact-form button:hover {
+      background-color: #b36619; }
+  .contact-form fieldset {
+    border: 1px solid lightgrey;
+    background: white; }
+    .contact-form fieldset legend {
+      text-align: center;
+      margin-bottom: 0.5em;
+      font-family: "Roboto Condensed", sans-serif;
+      color: #b36619; }
+  .contact-form .support > label,
+  .contact-form .disabilities > label {
+    display: block;
+    font-size: 14px; }
+  .contact-form .support,
+  .contact-form .disabilities {
+    padding: 10px; }
+
+/*# sourceMappingURL=sass-contact.css.map */

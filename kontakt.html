@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kontakt</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/sass-contact.css">
+        <link rel="stylesheet" href="css/sass-nav.css">
+    </head>
+    <body>
+        <nav class="flex-container-list">
+            <ul>
+                <li>
+                    <a href="index.html">Strona główna</a>
+                </li>
+                <li>
+                    <a href="inicjatywy.html">Nasze inicjatywy</a>
+                </li>
+                <li>
+                    <a href="zespol.html">Zespół</a>
+                </li>
+                <li>
+                    <a href="galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+        <form class="contact-form">
+            <h1>Napisz do nas</h1>
+            <div class="row-form">
+                <div class="column-form">
+                    <div class="input-form-group">
+                        <label form="subscriber-name">Imię<span>*</span></label>
+                        <input id="subscriber-name">
+                    </div>
+                    <div class="input-form-group">
+                        <label form="subscriber-surname">Nazwisko<span>*</span></label>
+                        <input id="subscriber-surname">
+                    </div>
+                    <div class="input-form-group">
+                        <label form="subscriber-email">E-mail<span>*</span></label>
+                        <input type="email" id="subscriber-email">
+                    </div>
+                    <div class="input-form-group">
+                        <label form="subscriber-phone-num">Telefon</label>
+                        <input type="tel" id="subscriber-phone-num">
+                    </div>
+                    <div class="input-form-group">
+                        <label form="subscriber-birth-date">Data urodzin</label>
+                        <input type="datetime-local" id="subscriber-birth-date">
+                    </div>
+                    <div class="input-form-group">
+                        <label form="subscriber-type-mes">Typ wiadmości</label>
+                        <select id="subscriber-type-mes">
+                            <option value="" selected="selected">Wybierz opcje</option>
+                            <option value="Wsparcie">Wsparcie</option>
+                            <option value="Uwagi techniczne">Uwagi techniczne</option>
+                            <option value="Propozycje zmian">Propozycje zmian</option>
+                            <option value="Oferty współpracy">Oferty współpracy</option>
+                        </select>
+                    </div>
+                    <div class="input-form-group">
+                        <label form="subscriber-message">Wiadomość<span>*<span></label>
+                        <textarea id="subscriber-message"></textarea>
+                    </div>
+                </div>
+                <div class="column-form">
+                    <fieldset class="support">
+                        <legend>Oczekiwany rodzaj wsparcia</legend>
+                        <label><input type="checkbox" id="work-support" value="Poradnictwo zawodowe">Poradnictwo zawodowe</label>
+                        <label><input type="checkbox" id="psychogical-support" value="Wsparcie psychologiczne">Wsparcie psychologiczne</label>
+                        <label><input type="checkbox" id="financial-support" value="Pomoc finansowa">Pomoc finansowa</label>
+                    </fieldset>
+                    <fieldset class="disabilities">
+                        <legend>Rodzaj niepełnosprawności</legend>
+                        <label><input type="checkbox" id="motor-disability" value="Niepełnosporawność ruchowa">Niepełnosporawność ruchowa</label>
+                        <label><input type="checkbox" id="mental-disability" value="Niepełnosprawność psychiczna">Niepełnosprawność psychiczna</label>
+                        <label><input type="checkbox" id="hearing-impairment" value="Wady słuchu">Wady słuchu</label>
+                        <label><input type="checkbox" id="visual-disability" value="Wady wzroku">Wady wzroku</label>
+                        <label><input type="checkbox" id="neurological disability" value="Schorzenia neurologiczne">Schorzenia neurologiczne</label>
+                        <label><input type="checkbox" id="diseases-internal-organs" value="Choroby narządów wewnętrznych">Choroby narządów wewnętrznych</label>
+                        <label><input type="checkbox" id="other-disability" value="Inne schorzenia">Inne schorzenia</label>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row-form">
+                <button id="sumbit">Wyślij</button>
+            </div>
+        </form>
+    </body>
+</html>

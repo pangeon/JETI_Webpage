@@ -1,6 +1,5 @@
-@mixin colspan($start: 1, $end: 5) {
-  grid-column: #{$start} / #{$end};
-}
+@import "_mixims.scss";
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;

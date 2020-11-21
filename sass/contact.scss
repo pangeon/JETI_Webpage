@@ -1,28 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-$coverColor: whitesmoke;
-$strongFont: "Roboto Condensed", sans-serif;
-$lightFont: "Montserrat", sans-serif;
-$buttonCardColorBackgroud: #078ab3;
-$buttonHoverCardColor: #b36619;
-$sectionColor: lightgrey;
-$smallFontSize: 14px;
-$bigFontSize: 18px;
-$hederSize: 30px;
+@import "_variables.scss";
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  background-color: $coverColor;
-  font-family: $lightFont;
+  background-color: $smoked;
+  font-family: $montserrat;
   border-radius: 3px;
   padding: 1em;
   h1 {
-    color: $buttonCardColorBackgroud;
+    color: $deepblue;
     text-align: center;
-    font-size: $hederSize;
-    font-family: $strongFont;
+    font-size: $size_1;
+    font-family: $roboto;
   }
   .row-form {
     display: flex;
@@ -34,7 +23,7 @@ $hederSize: 30px;
       .input-form-group {
         display: flex;
         > label {
-          font-size: $smallFontSize;
+          font-size: $size_3;
           margin-right: 1em;
           padding: 0 0;
         }
@@ -47,9 +36,9 @@ $hederSize: 30px;
   input,
   select,
   textarea {
-    border: 1px solid $sectionColor;
-    font-family: $lightFont;
-    font-size: $smallFontSize;
+    border: 1px solid $lightgrey;
+    font-family: $montserrat;
+    font-size: $size_3;
     padding: 0.6em;
     margin-bottom: 2em;
     flex: 2;
@@ -59,30 +48,30 @@ $hederSize: 30px;
   }
   button {
     padding: 1em;
-    background: $buttonCardColorBackgroud;
-    font-family: $strongFont;
-    font-size: $bigFontSize;
+    background: $deepblue;
+    font-family: $roboto;
+    font-size: $size_3;
     width: 30%;
     color: white;
     border: 0px;
     &:hover {
-      background-color: $buttonHoverCardColor;
+      background-color: $nutbrown;
     }
   }
   fieldset {
-    border: 1px solid $sectionColor;
+    border: 1px solid $lightgrey;
     background: white;
     legend {
       text-align: center;
       margin-bottom: 0.5em;
-      font-family: $strongFont;
-      color: $buttonHoverCardColor;
+      font-family: $roboto;
+      color: $nutbrown;
     }
   }
   .support > label,
   .disabilities > label {
     display: block;
-    font-size: $smallFontSize;
+    font-size: $size_3;
   }
   .support,
   .disabilities {

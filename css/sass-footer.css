@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  padding: 50px 20px 35px 20px;
+  background-color: #b36619;
+  color: white;
+  font-family: "Montserrat", sans-serif; }
+  footer h3 {
+    text-align: center; }
+  footer div img {
+    max-width: 50%;
+    margin: auto 25%; }
+  footer div form {
+    text-align: center;
+    padding: 20px 0 0 0; }
+    footer div form div input {
+      margin: 10px 0 0 0;
+      padding: 5px;
+      background-color: #b36619;
+      border: 2px solid white;
+      font-family: "Montserrat", sans-serif;
+      color: white; }
+    footer div form div input[type="submit"] {
+      background-color: white;
+      color: #b36619;
+      width: 30%; }
+    footer div form div input[type="submit"]:hover {
+      background-color: #b36619;
+      color: white;
+      width: 30%; }
+    footer div form div input::placeholder {
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      opacity: 0.5; }
+  footer div p {
+    padding: 20px 0 0 0;
+    font-size: 14px;
+    text-align: center; }
+  footer div ul {
+    list-style: disc;
+    padding: 10px 0 0 40px; }
+    footer div ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px; }
+    footer div ul li a:hover {
+      color: lightgrey; }
+  footer .socials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+    footer .socials a {
+      padding: 30px 0 0 0;
+      text-align: center; }
+      footer .socials a img {
+        filter: brightness(0) invert(1); }
+      footer .socials a img:hover {
+        opacity: 0.5; }
+
+/*# sourceMappingURL=sass-footer.css.map */

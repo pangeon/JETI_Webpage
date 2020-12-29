@@ -106,3 +106,12 @@ img {
     }
   }
 }
+header {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  header {
+    display: none;
+  }
+}

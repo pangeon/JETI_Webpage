@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $smoked;
+  background-color: $opacity_smoked;
   margin: 10px 0 10px 0;
   font-family: $montserrat;
   ul {
@@ -24,5 +24,36 @@
   }
   ul li a:hover {
     color: $white;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .flex-container-list {
+    ul li {
+      font-size: $size_3;
+    }
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .flex-container-list {
+    display: block;
+    ul {
+      display: block;
+      text-align: center;
+      li {
+        padding: 10px;
+        font-size: $size_3;
+      }
+    }
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+}
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .sticky {
+    position: relative;
   }
 }
